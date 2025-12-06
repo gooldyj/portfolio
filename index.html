@@ -840,7 +840,7 @@
             <div class="container">
                 <div class="card-grid">
                     <div class="neon-card">
-                        <h3>COURSE PROJECTS</h3>
+                        <h3>COMMA QUEST</h3>
                         <div class="future-block">
                             <h4>Exploring Virtual Reality Learning Environments for Commas</h4>
                             <p style="margin-bottom: 15px;">Immersive VR experience designed to teach comma usage through interactive, spatial learning environments.</p>
@@ -857,18 +857,28 @@
                     </div>
                     
                     <div class="neon-card">
-                        <h3>INDEPENDENT WORK</h3>
+                        <h3>SERVICE LEARNING WEBSITE</h3>
                         <div class="future-block">
-                            <h4>INNOVATION SHOWCASE</h4>
-                            <p>Portfolio of self-directed projects demonstrating creative problem-solving, professional development initiatives, and collaborative training program development.</p>
+                            <p style="margin-bottom: 15px;">This three-page informational website introduces the core idea of service learning and explains its purpose in a clear, student-friendly way. The site highlights what service learning is, why it matters, and how projects can connect classroom work with real community needs. It is a simple HTML/CSS site designed for easy navigation and readability, demonstrating how web design can support communication and outreach.</p>
+                            <div style="position: relative; width: 100%; padding-bottom: 56.25%; margin-top: 15px; border: 2px solid var(--neon-cyan); border-radius: 10px; overflow: hidden;">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/fUvMnftgURc" 
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                    frameborder="0"
+                                    allowfullscreen
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+                                </iframe>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="neon-card">
-                        <h3>CRITICAL REFLECTIONS</h3>
+                        <h3>CANVAS HTML</h3>
                         <div class="future-block">
-                            <h4>METACOGNITIVE ANALYSIS</h4>
-                            <p>Deep reflection framework documenting learning processes, challenge resolution strategies, skill acquisition pathways, and professional growth trajectories.</p>
+                            <p style="margin-bottom: 15px;">Pushing the boundaries of Canvas HTML limits through AI integration.</p>
+                            <div style="border: 2px solid var(--neon-cyan); border-radius: 10px; overflow: hidden; box-shadow: var(--glow) var(--neon-cyan);">
+                                <img src="Canvas.jpg" alt="Canvas HTML Example" style="width: 100%; height: auto; display: block;">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1373,8 +1383,17 @@
         <div class="content-section" style="padding-top: 20px;">
             <div class="container">
                 <div class="future-block">
-                    <h4>PRESENTATION MATERIAL DEVELOPMENT</h4>
-                    <p>Professional presentation suite including interactive slide deck, demonstration materials, video content, impact visualization, and strategic recommendation framework for institutional adoption.</p>
+                    <h4>PROJECT PRESENTATION VIDEO</h4>
+                    <p style="margin-bottom: 20px;">Final presentation of the DC3 Service Learning Mini-Course instructional design project.</p>
+                    <div style="position: relative; width: 100%; padding-bottom: 62%; margin-top: 15px; border: 2px solid var(--neon-cyan); border-radius: 10px; overflow: hidden; box-shadow: var(--glow) var(--neon-cyan);">
+                        <iframe 
+                            src="https://www.youtube.com/embed/GjdTDo-gL74" 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                            frameborder="0"
+                            allowfullscreen
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1523,10 +1542,11 @@
             }
         }
         
-        setTimeout(hideLoader, 2500);
+        setTimeout(hideLoader, 4000);
+        setTimeout(hideLoader, 5500);
         
         window.addEventListener('load', function() {
-            setTimeout(hideLoader, 2000);
+            setTimeout(hideLoader, 3500);
         });
 
         function showPage(pageId) {
@@ -1539,13 +1559,14 @@
 
         document.addEventListener('DOMContentLoaded', function() {
             showPage('home');
+            setTimeout(hideLoader, 4000);
         });
 
         document.addEventListener('mousemove', function(e) {
-            const cursor = document.querySelector('.animated-bg');
+            var cursor = document.querySelector('.animated-bg');
             if (cursor) {
-                const x = e.clientX / window.innerWidth;
-                const y = e.clientY / window.innerHeight;
+                var x = e.clientX / window.innerWidth;
+                var y = e.clientY / window.innerHeight;
                 cursor.style.transform = 'translate(' + (x * 20) + 'px, ' + (y * 20) + 'px)';
             }
         });
